@@ -41,6 +41,6 @@ function populateTable(results) {
 }
 
 Promise.all(promises).then((results) => {
-    document.getElementById('loading-text').remove();
+    document.getElementById('loading').remove();
     populateTable(results);
 });
